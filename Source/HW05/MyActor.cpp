@@ -66,7 +66,7 @@ float AMyActor::Distance(const FVector& first, const FVector& second)
 
 void AMyActor::CreateEvent(int32 Probability)
 {
-	if (FMath::RandRange(0, 100) < Probability)
+	if (FMath::RandRange(1, 100) <= Probability)
 	{
 		EventCount++;
 		UE_LOG(LogTemp, Warning, TEXT("Event created"));
